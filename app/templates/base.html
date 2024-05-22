@@ -9,25 +9,26 @@
     <title>Ceneo.pl Web Scrapper</title>
 </head>
 <body>
-    <header class="container"> 
-        <h1>Ceneo.pl Web Scrapper</h1>
+    <header class="header-bg"> 
+        <h1 class="text-center">Ceneo.pl Web Scrapper</h1>
     </header>
-    <nav class="container">
-        <ul class="row">
-            <li class="col-3">
-                <a href="{{url_for('index')}}">Main page</a>
-            </li>
-            <li class="col-3">
-                <a href="{{url_for('extract')}}">Extract opinions</a>
-            </li>
-            <li class="col-3">
-                <a href="{{url_for('products')}}">List products</a>
-            </li>
-            <li class="col-3">
-                <a href="{{url_for('author')}}">About author</a>
-            </li>
-
-        </ul>
+    <nav class="nav-section">
+        <div class="container-fluid px-0">
+            <div class="row no-gutters">
+                <div class="col-3 nav-item mx-0">
+                    <a href="{{url_for('index')}}" class="nav-link">Main page</a>
+                </div>
+                <div class="col-3 nav-item">
+                    <a href="{{url_for('extract')}}" class="nav-link">Extract opinions</a>
+                </div>
+                <div class="col-3 nav-item">
+                    <a href="{{url_for('products')}}" class="nav-link">List products</a>
+                </div>
+                <div class="col-3 nav-item">
+                    <a href="{{url_for('author')}}" class="nav-link">About author</a>
+                </div>
+            </div>
+        </div>
     </nav>
     <section>
         {% block content %}
